@@ -1,4 +1,5 @@
 # Proyecto "Hospital Valencia" - Proyecto final del curso de Python en CoderHouse
+Video explicativo en Loom https://www.loom.com/share/6af9c6f6e61843e89bff04c46f52def7
 
 ### Descripcion
 
