@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+           <meta charset="UTF-8">
+           <meta http-equiv="X-UA-Compatible" content="IE=edge">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <title>Especialidades - Lista</title>
+</head>
+<body>
+    
+    <h1>Especialidades Ofrecidas</h1>
+    <ul>
+        {% for especialidades in object_list %}
+
+        <li>
+            <p>Especialidad: {{ especialidades.especialidad }} </p>
+            <p>
+                <a href="{% url 'Detail' especialidades.id %}">Ver</a> |
+                <a href="{% url 'Edit' especialidades.id %}">Editar</a> |
+                <a href="{% url 'Delete' especialidades.id %}">Borrar</a>
+            </p>
+        </li>
+
+        {% endfor %}
+
+    </ul>
+    
+    
+</body>
+</html>
